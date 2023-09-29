@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Tells a story based on the contents of the `/etc/passwd` file.
+# Bash script that displays the content of the file /etc/passwd, using the while loop + IFS.
 
 while IFS=':' read -r username password uid gid info home shell; do
 	echo "The user $username is not pard of the $gid gang,"\

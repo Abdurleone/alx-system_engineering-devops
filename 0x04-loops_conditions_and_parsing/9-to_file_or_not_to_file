@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Displays information about the 'school' file.
+# Script that gives information of a empty or non empty file
 
 if [ -e "school" ]
 then
