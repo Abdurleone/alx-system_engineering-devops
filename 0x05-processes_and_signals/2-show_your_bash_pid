@@ -1,0 +1,5 @@
+/usr/bin/env bash
+# script that displays lines containing the bash word, thus allowing easily getting pid OF bASH PROCESS.
+#shelcheck disable=SC2009
+
+ps -aux | grep bash
