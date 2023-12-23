@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 22/tcp
+=======
 sudo ufw status
 
 # if ufw isnot active, we can enable it by running:
@@ -20,4 +27,5 @@ sudo ufw allow 80/tcp
 sudo ufw show added
 
 # Finally, enable ufw by running:
+>>>>>>> a7531cbea9de3ab516756caea7fb6e4cc650c6e9
 sudo ufw enable
