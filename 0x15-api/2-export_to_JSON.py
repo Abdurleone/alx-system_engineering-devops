@@ -6,7 +6,7 @@ and exports data in the JSON format.
 """
 
 import json
-import requests as r
+import requests
 from sys import argv
 
 
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     totalTasks = []
     updateUser = {}
 
-    for all_Emp in json.req:
+    for all_Emp in json_req:
         totalTasks.append(
                 {
                     "task": all_Emp.get('title'),
