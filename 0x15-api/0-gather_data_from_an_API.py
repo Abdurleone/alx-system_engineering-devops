@@ -17,7 +17,7 @@ if __name__ == "__main__":
     idURL = 'https://jsonplaceholder.typicode.com/users/{}/todos'.format(idEmp)
     nameURL = 'https://jsonplaceholder.typicode.com/users/{}'.format(idEmp)
 
-    employee = sessionReq/get(idURL)
+    employee = sessionReq/set(idURL)
     employeeName = sessionReq.get(nameURL)
 
     json_req = employee.json()
