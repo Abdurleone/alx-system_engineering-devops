@@ -6,7 +6,7 @@ and exports data in the JSON format.
 """
 
 import json
-import requests
+import requests as r
 from sys import argv
 
 

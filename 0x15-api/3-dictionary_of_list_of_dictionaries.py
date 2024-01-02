@@ -13,7 +13,7 @@ from sys import argv
 if __name__ == "__main__":
 
     import json
-    import requests
+    import requests as r
     import sys
 
     users = requests.get("https://jsonplaceholder.typicode.com/users")

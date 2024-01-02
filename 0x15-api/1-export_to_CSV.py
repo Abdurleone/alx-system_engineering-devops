@@ -7,7 +7,7 @@ exporting data in the CSV format.
 
 import csv
 import json
-import requests
+import requests as r
 from sys import argv
 
 

@@ -5,7 +5,7 @@ information about his/her TODO list progress
 """
 
 import json
-import requests
+import requests as r
 from sys import argv
 
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     idURL = 'https://jsonplaceholder.typicode.com/users/{}/todos'.format(idEmp)
     nameURL = 'https://jsonplaceholder.typicode.com/users/{}'.format(idEmp)
 
-    employee = sessionReq/set(idURL)
+    employee = sessionReq/get(idURL)
     employeeName = sessionReq.get(nameURL)
 
     json_req = employee.json()
