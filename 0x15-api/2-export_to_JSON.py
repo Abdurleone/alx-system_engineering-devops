@@ -27,7 +27,7 @@ if __name__ == "__main__":
     totalTasks = []
     updateUser = {}
 
-    for all_Emp in json.req:
+    for all_Emp in json_req:
         totalTasks.append(
                 {
                     "task": all_Emp.get('title'),
