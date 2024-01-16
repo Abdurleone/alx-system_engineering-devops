@@ -63,7 +63,7 @@ def recurse(subreddit, dictionary, after=None):
 
         recurse(subreddit, dictionary)
 
-        sorted_items = sorted(dictionary.items(), keys=lambda kv: (=kv[1], kv[0]))
-        for item in sorted_itmes:
+        sorted_items = sorted(dictionary.items(), keys=lambda kv: (-kv[1], kv[0]))
+        for item in sorted_items:
             if item[1] > 0:
                 print("{}: {}".format(item[0], item[1]))
