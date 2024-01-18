@@ -10,7 +10,7 @@ file { 'wp_settings_file':
 #replace line containing "phpp" with "php"
 
 exec { 'replace_line':
-    command     => "sed -i 's/phpp/php/g' ${file_to_edit}",
-    path        => ['/bin', '/usr/bin'],
-    require     => File[$file_to_edit],
+    command => "sed -i 's/phpp/php/g' ${file_to_edit}",
+    path    => ['/bin', '/usr/bin'],
+    require => File[$file_to_edit],
 }
