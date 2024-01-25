@@ -1,16 +1,6 @@
-# A puppet manuscript to replace a line in a file on a server
+# Solve issue from wp-settings 
 
-$file_to_edit = '/var/www/html/wp-settings.php'
-
-file { 'wp_settings_file':
-    path    => $file_to_edit,
-    ensure  => file,
-}
-
-#replace line containing "phpp" with "php"
-
-exec { 'replace_line':
-    command     => "sed -i 's/phpp/php/g' ${file_to_edit}",
-    path        => ['/bin', '/usr/bin'],
-    require     => File[$file_to_edit],
+exec { 'fix':
+  command => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+  path    => '/usr/local/bin/:/bin/'
 }
